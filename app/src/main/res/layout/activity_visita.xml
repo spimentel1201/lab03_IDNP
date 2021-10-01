@@ -6,14 +6,14 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="top"
-    tools:context=".Paciente2Activity">
+    tools:context=".VisitaActivity">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAlignment="center"
         android:layout_gravity="center"
         android:layout_marginTop="100dp"
-        android:text="@string/ingrese_los_datos_del_paciente" />
+        android:text="Datos de la Visita" />
 
     <LinearLayout
         android:layout_width="fill_parent"
@@ -28,71 +28,60 @@
             android:layout_height="wrap_content"
             android:text="@string/nombres"></TextView>
 
-        <EditText
-            android:id="@+id/EditTextNames"
-            android:layout_width="fill_parent"
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:autofillHints=""
-            android:inputType="text"></EditText>
+            android:text=""></TextView>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/apellidos"></TextView>
-
-        <EditText
-            android:id="@+id/EditTextLastnames"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:autofillHints=""
-            android:inputType="text"></EditText>
+            android:text="Peso: "></TextView>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/dni"></TextView>
-
-        <EditText
-            android:id="@+id/EditTextDni"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:autofillHints=""
-            android:inputType="number"></EditText>
+            android:text=""></TextView>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/direcci_n"></TextView>
+            android:text="Temperatura: "></TextView>
 
-        <EditText
-            android:id="@+id/EditTextAddress"
-            android:layout_width="fill_parent"
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:autofillHints=""
-            android:inputType="text"></EditText>
+            android:text=""></TextView>
 
-        <LinearLayout
-            android:layout_width="match_parent"
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:text="Presion: "></TextView>
 
-        <Button
-            android:id="@+id/ButtonRegister"
-            android:layout_width="130dp"
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="20dp"
-            android:onClick="register"
-            android:layout_gravity="center_horizontal"
-            android:text="@string/registrar"></Button>
+            android:text=""></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nivel de Saturación: "></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""></TextView>
+
         <Button
             android:id="@+id/ButtonCancelar"
             android:layout_width="130dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:onClick="cancelar"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:onClick="atras"
             android:layout_gravity="center_horizontal"
-            android:text="@string/cancelar"></Button>
-        </LinearLayout>
+            android:text="@string/atras"></Button>
     </LinearLayout>
 
 </LinearLayout>

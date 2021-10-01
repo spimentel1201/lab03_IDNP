@@ -91,4 +91,12 @@
         "when a user tries to pick up one of cards.\n\n"
     </string>
     <string name="action_settings">Settings</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="ingrese_los_datos_del_paciente">Ingrese los datos del paciente</string>
+    <string name="registrar">Registrar</string>
+    <string name="nombres">Nombres:</string>
+    <string name="apellidos">Apellidos</string>
+    <string name="direcci_n">Dirección:</string>
+    <string name="dni">DNI:</string>
+    <string name="atras">atras</string>
 </resources>
