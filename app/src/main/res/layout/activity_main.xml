@@ -40,20 +40,25 @@
         android:padding="14dp"
         android:layout_marginRight="10dp"
         android:layout_marginLeft="10dp">
+
         <Button
             android:id="@+id/btn_RegistrarPaciente"
             android:layout_width="160dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_marginTop="10dp"
             android:layout_marginRight="10dp"
             android:background="@drawable/rounded_border"
-            android:text="Paciente" />
+            android:onClick="registrarPaciente"
+            android:text="Paciente"
+            tools:ignore="OnClick" />
         <Button
             android:id="@+id/btn_RegistrarVisita"
             android:layout_width="160dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_marginTop="10dp"
-            android:layout_marginLeft="8dp"
+            android:layout_marginLeft="10dp"
             android:background="@drawable/rounded_border"
             android:text="Visita" />
 
@@ -61,6 +66,7 @@
             android:id="@+id/btn_Registrar"
             android:layout_width="160dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_marginTop="10dp"
             android:background="@drawable/rounded_border"
             android:text="++" />
@@ -69,8 +75,9 @@
             android:id="@+id/btn_info"
             android:layout_width="160dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_marginTop="10dp"
-            android:layout_marginLeft="8dp"
+            android:layout_marginLeft="10dp"
             android:background="@drawable/rounded_border"
             android:text="Ver Info" />
 
