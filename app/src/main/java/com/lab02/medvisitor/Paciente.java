@@ -5,6 +5,7 @@ import java.util.ArrayList;
 
 public class Paciente implements Serializable {
     String nombre, apellido, dni, direccion;
+    ArrayList<Visita> visitas;
     Paciente(){
 
     }
@@ -30,5 +31,13 @@ public class Paciente implements Serializable {
 
     public String getDireccion(){
         return this.direccion;
+    }
+
+    public void agregarVisita(Visita a){
+        visitas.add(a);
+    }
+
+    public ArrayList<Visita> obtenerVisita(){
+        return visitas;
     }
 }

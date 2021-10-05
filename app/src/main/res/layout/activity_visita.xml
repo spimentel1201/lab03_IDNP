@@ -26,62 +26,72 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/nombres"></TextView>
+            android:text="DNI"></TextView>
 
-        <TextView
-            android:layout_width="wrap_content"
+        <EditText
+            android:id="@+id/EditTextDnis"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text=""></TextView>
+            android:autofillHints=""
+            android:inputType="text"></EditText>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Peso: "></TextView>
 
-        <TextView
-            android:layout_width="wrap_content"
+        <EditText
+            android:id="@+id/EditTextWeight"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text=""></TextView>
+            android:autofillHints=""
+            android:inputType="numberDecimal"></EditText>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Temperatura: "></TextView>
 
-        <TextView
-            android:layout_width="wrap_content"
+        <EditText
+            android:id="@+id/EditTextTemperature"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text=""></TextView>
+            android:autofillHints=""
+            android:inputType="numberDecimal"></EditText>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Presion: "></TextView>
 
-        <TextView
-            android:layout_width="wrap_content"
+        <EditText
+            android:id="@+id/EditTextPresure"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text=""></TextView>
+            android:autofillHints=""
+            android:inputType="numberDecimal"></EditText>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Nivel de Saturación: "></TextView>
 
-        <TextView
-            android:layout_width="wrap_content"
+        <EditText
+            android:id="@+id/EditTextSaturation"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text=""></TextView>
+            android:autofillHints=""
+            android:inputType="numberDecimal"></EditText>
 
         <Button
-            android:id="@+id/ButtonCancelar"
-            android:layout_width="130dp"
+            android:id="@+id/ButtonRegisterVisit"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
             android:gravity="center"
-            android:onClick="atras"
+            android:onClick="registrar"
             android:layout_gravity="center_horizontal"
-            android:text="@string/atras"></Button>
+            android:text="Registrar"></Button>
     </LinearLayout>
 
 </LinearLayout>

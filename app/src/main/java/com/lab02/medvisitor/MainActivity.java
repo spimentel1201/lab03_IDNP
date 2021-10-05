@@ -22,25 +22,34 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        ArrayList<Paciente> lista = (ArrayList<Paciente>) getIntent().getSerializableExtra("listaPaciente");
-        EditText pru = (EditText)findViewById(R.id.EditTextPrueba);
+        //ArrayList<Paciente> lista = (ArrayList<Paciente>) getIntent().getSerializableExtra("listaPaciente");
+
         /*if(!lista.isEmpty()){
             Paciente paciente1 = lista.get(0);
             String prueba = paciente1.getNombre() + " " + paciente1.getApellido();
             pru.setText(prueba);
-        }else{
+        /*}else{
             pru.setText("Vacio");
             System.out.print("Vacio");
         }*/
 
 
-
     }
-    public void registrarPaciente(View view){
-        Intent intent = new Intent(this, Paciente2Activity.class);
+    public void registrarVisita(View view){
+        Intent intent = new Intent(this, VisitaActivity.class);
         intent.putExtra(Lista, (Parcelable) paciente);
         /*intent.putExtra(ENVIAR_EDAD, mensaje2);*/
         startActivity(intent);
     }
 
+    public void verInfo(View view) {
+        EditText pru = (EditText)findViewById(R.id.EditTextPrueba);
+        Intent uno = getIntent();
+        Paciente x = (Paciente) uno.getSerializableExtra("objeto1");
+        /*ArrayList<Visita> pruebaa = x.obtenerVisita();
+        double pesos = pruebaa.get(0).getPeso();
+        String respuesta = Double.toString(pesos);*/
+
+        pru.setText("No me sale :v");
+    }
 }

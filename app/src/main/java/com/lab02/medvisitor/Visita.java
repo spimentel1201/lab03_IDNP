@@ -5,7 +5,6 @@ import java.util.ArrayList;
 
 public class Visita implements Serializable {
     Double peso, temperatura, presion, nivelSaturacion;
-
     Visita(){
 
     }
